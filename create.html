@@ -41,7 +41,7 @@
       });
     }
 
-    function reserve() {
+    function create() {
       var timestart = document.getElementById("timestart").value;
       var datestart = document.getElementById("datestart").value;
       var date = datestart + " " + timestart + ":00"
@@ -50,8 +50,8 @@
       var duration = document.getElementById("duration").value;
       sessionStorage.setItem('estimatedduration', duration)
       var psid = document.getElementById("caravailable").value
-      if (psid == "A2") {
-        sessionStorage.setItem("reservedparkplace", "A1")
+      if (psid == "ping-pong raised by club A") {
+        sessionStorage.setItem("reservedparkplace", "ping-pong raised by club B")
       } else {
         sessionStorage.setItem("reservedparkplace", psid)
       }
@@ -83,7 +83,7 @@
     </div>
     <ul class="list-unstyled components">
       <li>
-        <a href="myreservation.html"><i class="fas fa-home"></i>My Activities</a>
+        <a href="myactivities.html"><i class="fas fa-home"></i>My Activities</a>
       </li>
 
       <li>
@@ -91,18 +91,18 @@
           <span><i class="fas fa-caret-down"></i></span></a>
         <ul class="collapse collapsible-body" id="pagereserve">
           <li>
-            <a href="reserve.html">Join</a>
+            <a href="join.html">Join</a>
           </li>
           <li>
-            <a href="book.html">Create</a>
+            <a href="create.html">Create</a>
           </li>
         </ul>
       </li>
       <!-- <li>
-        <a href="book.html"><i class="fas fa-car"></i>Park</a>
+        <a href="create.html"><i class="fas fa-car"></i>Park</a>
       </li> -->
       <li>
-        <a href="leave.html"><i class="fas fa-car"></i>Club</a>
+        <a href="club.html"><i class="fas fa-car"></i>Club</a>
       </li>
       <li>
         <a href="index.html"><i class="fas fa-map"></i>Logout</a>
@@ -155,11 +155,11 @@
         <div class="row">
           <div class="col-md-12">
             <div class="subsite-heading">
-              Reserve before 4:00 p.m. everyday!
+              Create acivity before 4:00 p.m. everyday!
             </div>
           </div>
         </div>
-        <form class="form-group" action="myreservation.html">
+        <form class="form-group" action="myactivities.html">
           <div class="form-group col-md-12">
             <label>Time to arrive</label>
             <div class="row">
@@ -179,7 +179,7 @@
           </div>
 
           <div class="form-group col-md-12">
-            <label>Parking duration</label>
+            <label>Activity duration</label>
             <div class="field-group">
               <div class="field-group">
                 <i class="fas fa-book"></i>
@@ -189,22 +189,29 @@
           </div>
 
           <div class="form-group col-md-12">
-            <label>Desired parking space</label>
+            <label>What activity you would like to create?</label>
             <div class="field-group">
-              <i class="fas fa-car"></i>
-              <select class="custom-select mr-sm-2 with-icon" id="caravailable">
-                <option selected disabled selected>Please select</option>
-                <option value="A1">A1</option>
-                <option value="A2">A2</option>
-                <option value="A3">A3</option>
-              </select>
+              <div class="field-group">
+                <i class="fas fa-book"></i>
+                <input type="text" class="form-control with-icon" value="Basketball at Thursday" id=uemail>
+              </div>
             </div>
           </div>
+
+<!--         <div class="form-group col-md-12">
+            <div class="col">
+              <label>What activity you would like to create?</label>
+              <div class="field-group">
+                <i class="fas fa-envelope"></i>
+                <input type="text" class="form-control with-icon" value="Basketball at Thursday" id=uemail>
+              </div>
+            </div>
+          </div>-->
 
           <div class="row field-row login-submit">
             <div class="col">
               <div class="button">
-                <button type="submit" class="theme-button" onclick="reserve()">Reserve</button>
+                <button type="submit" class="theme-button" onclick="create()">Create</button>
               </div>
             </div>
           </div>
@@ -219,19 +226,19 @@
   <!-- Botom Panel  -->
   <div class="bottom-panel">
     <div class="bp-col">
-      <a href="reserve.html">
+      <a href="join.html">
         <div class="bp-icon"><img src="img/Join.png" alt="icon"> </div>
         <div class="bp-text">Join</div>
       </a>
     </div>
     <div class="bp-col">
-      <a href="book.html">
+      <a href="create.html">
         <div class="bp-icon"><img src="img/create.png" alt="icon"></div>
         <div class="bp-text">Create</div>
       </a>
     </div>
     <div class="bp-col">
-      <a href="leave.html">
+      <a href="club.html">
         <div class="bp-icon"><img src="img/club.png"icon"></div>
         <div class="bp-text">Club</div>
       </a>
