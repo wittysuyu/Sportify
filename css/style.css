@@ -24,6 +24,13 @@ button{
   cursor: pointer;
   outline: none;
 }
+
+/* --------- button labels --------- */
+.button-value {
+	display: inline-block;
+	white-space: pre-line;
+}
+
 /* --------- tables --------- */
 .td_left{vertical-align:middle;}
 .td_right{vertical-align:middle;}

@@ -42,7 +42,7 @@
     }
 
     ._available {
-      background-color: rgb(241, 226, 17);
+      background-color: rgb(14, 198, 47);
       border: none;
     }
 
@@ -129,7 +129,7 @@
     }
     function init() {
       document.getElementById("currentusername").innerHTML = sessionStorage.getItem('username');
-      lastselected = "basketball";
+      lastselected = "A1";
       document.getElementById(lastselected).style.color = "#FFF";
       document.getElementById(lastselected).style.border = "3px solid #063";
       document.getElementById(lastselected).style.fontWeight = 'bold';
@@ -312,28 +312,28 @@
               <div class="layout" style="margin-top: 20px;">
                 <span style="width: 250px;display:inline-block;" class="horzontal">
                   <div>
-                    <input type="button" id="basketball" onclick="selectspace(this)" class="_available" value="basketball"></input>
+                    <button style="width: 250px;display:inline-block;" id="A1" onclick="selectspace(this)" class="_available">羽你同行<br><div style="font-size: 80%; text-align:left;">|badminton |hiking |camping</div></button>
                   </div>
                   <div>
-                    <input type="button" id="ping-pong raised by club A" onclick="selectspace(this)" class="_available" value="ping-pong raised by club A"></input>
+                    <button style="width: 250px;display:inline-block;" id="A2" onclick="selectspace(this)" class="_available">Crossover<br><div style="font-size: 80%; text-align:left;">|basketball |girls</div></button>
                   </div>
                   <div>
-                    <input type="button" id="Cycling" onclick="selectspace(this)" class="_available" value="Cycling"></input>
+                    <button style="width: 250px;display:inline-block;" id="A3" onclick="selectspace(this)" class="_available">零封<br><div style="font-size: 80%; text-align:left;">|Ping-pong</div></button>
                   </div>
                   <div>
-                    <input type="button" id="football" onclick="selectspace(this)" class="_available" value="football"></input>
+                    <button style="width: 250px;display:inline-block;" id="A4" onclick="selectspace(this)" class="_available">POP Club<br><div style="font-size: 80%; text-align:left;">|volleyball</div></button>
                   </div>
                   <div>
-                    <input type="button" id="badminton" onclick="selectspace(this)" class="_available" value="badminton"></input>
+                    <button style="width: 250px;display:inline-block;" id="A5" onclick="selectspace(this)" class="_available">Fitness<br><div style="font-size: 80%; text-align:left;">|dance |yoga</div></button>
                   </div>
                   <div>
-                    <input type="button" id="ping-pong raised by club B" onclick="selectspace(this)" class="_available" value="ping-pong raised by club B"></input>
+                    <button style="width: 250px;display:inline-block;" id="A6" onclick="selectspace(this)" class="_available">不是哥们儿<br><div style="font-size: 80%; text-align:left;">|football |frisbee |boys</div></button>
                   </div>
                   <div>
-                    <input type="button" id="climb" onclick="selectspace(this)" class="_available" value="climb"></input>
+                    <button style="width: 250px;display:inline-block;" id="A7" onclick="selectspace(this)" class="_available">氧乐多<br><div style="font-size: 80%; text-align:left;">|climb |running</div></button>
                   </div>
                   <div>
-                    <input type="button" id="tennis" onclick="selectspace(this)" class="_available" value="tennis"></input>
+                    <button style="width: 250px;display:inline-block;" id="A8" onclick="selectspace(this)" class="_available">GOAT<br><div style="font-size: 80%; text-align:left;">|skiing |rugby</div></button>
                   </div>
 
                 </span>
